@@ -1,4 +1,4 @@
-@[TOC](SpringBoot学习笔记（一）：Demo)
+# SpringBoot学习笔记（一）：Demo
 
 ## 一、pom.xml引入Maven依赖
 
