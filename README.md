@@ -1,6 +1,6 @@
-# SpringBoot-demo
+@[TOC](SpringBoot学习笔记（一）：Demo)
 
-## pom.xml
+## 一、pom.xml引入Maven依赖
 
 ```xml
 <!-- web开发包：包含Tomcat和Springmvc -->
@@ -16,7 +16,7 @@
 </dependency>
 ```
 
-## 		启动类
+## 二、启动类
 
 - **@SpringBootApplication**：声明当前类为SpringBoot入口类，且项目只只能有一个。
 
@@ -29,9 +29,9 @@ public class DemoApplication {
 }
 ```
 
-## Controller类
+## 三、Controller类
 
-- **@RestController**：声明当前类为控制层的类（等价于@Controller+@ResponseBody的结合，方法返回json格式数据）。
+- **@RestController**：声明当前类为控制层的类（等价于**@Controller+@ResponseBody**的结合，方法返回**json**格式数据）。
 - **@RequestMapping**：用来处理请求地址映射的注解，可用于类或方法上。
 
 ```java
@@ -44,7 +44,7 @@ public class HelloController {
 }
 ```
 
-## 测试类
+## 四、测试类
 
 - **@SpringBootTest**：是SpringBoot Since:1.4.0 版本开始引入的一个用于测试的注解。
 - **@Test**：该方法可以不用main方法调用就可以测试出运行结果，是一种测试方法。
@@ -58,4 +58,3 @@ class DemoApplicationTests {
     }
 }
 ```
-
